@@ -38,6 +38,5 @@ tasks {
     shadowJar {
         archiveFileName.set('BalloonsPlugin.jar')
         relocate('de.tr7zw.changeme.nbtapi', 'com.vertmix.balloons.nbtapi')
-        destinationDirectory.set(new File("C:\\Users\\alexc\\Desktop\\bungee 1.8 fleeking\\hub\\plugins"))
     }
 }

@@ -1,6 +1,5 @@
 package com.vertmix.balloons;
 
-import com.comphenix.protocol.PacketType;
 import com.vertmix.balloons.api.BalloonAPI;
 import com.vertmix.balloons.api.abilities.InfernoWrathActivation;
 import com.vertmix.balloons.api.abilities.InfernoWrathPassive;
