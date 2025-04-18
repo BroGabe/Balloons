@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'com.vertmix.balloons'
+version = '1.0.0'
+description = 'Balloons Plugin for Spigot 1.8.8'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven {
+        name = 'minecraft-repo'
+        url = 'https://libraries.minecraft.net/'
+    }
+    maven {
+        name = 'CodeMC'
+        url = 'https://repo.codemc.io/repository/maven-public/'
+    }
+    maven { url "https://repo.dmulloy2.net/repository/public/" }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly 'com.mojang:authlib:1.5.21'
+    implementation 'de.tr7zw:item-nbt-api:2.13.2'
+    compileOnly 'com.comphenix.protocol:ProtocolLib:5.1.0'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks {
+    shadowJar {
+        archiveFileName.set('BalloonsPlugin.jar')
+        relocate('de.tr7zw.changeme.nbtapi', 'com.vertmix.balloons.nbtapi')
+        destinationDirectory.set(new File("C:\\Users\\alexc\\Desktop\\bungee 1.8 fleeking\\hub\\plugins"))
+    }
+}

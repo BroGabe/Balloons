@@ -1,0 +1,17 @@
+name: Balloons
+main: com.vertmix.balloons.BalloonsPlugin
+version: 1.0.0
+description: Adds customizable balloon attachments to weapons, granting unique abilities.
+depend: [ProtocolLib]
+commands:
+  balloons:
+    description: Manage balloons
+    usage: /<command> [give <player> <balloon>]
+    aliases: [balloon]
+permissions:
+  balloons.use:
+    description: Allows the use of balloon commands
+    default: true
+  balloons.give:
+    description: Allows giving balloons to players
+    default: op

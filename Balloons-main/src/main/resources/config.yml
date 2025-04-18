@@ -1,0 +1,32 @@
+messages:
+  only-players: "&cOnly players can use this command."
+  usage: "&cUsage: /balloons give <player> <balloon>"
+  balloon-not-found: "&cBalloon not found: &6{balloon}&c."
+  player-not-found: "&cPlayer not found: &6{player}&c."
+  failed-to-create-balloon: "&cFailed to create balloon item."
+  gave-balloon: "&aGave &6{balloon} &ato &6{player}&a."
+  received-balloon: "&aYou have received &6{balloon}&a!"
+  invalid-subcommand: "&cInvalid subcommand. Usage: /balloons [give <player> <balloon>]"
+  balloon-on-cooldown: "&cThis balloon is currently on cooldown. Left: &e{time_left}&c."
+  balloon-activated: "&aActivated &6{balloon}&a!"
+  must-hold-weapon: "&cYou must hold a weapon to attach the balloon."
+  weapon-already-has-balloon: "&cYour weapon already has a balloon attached."
+  balloon-attached: "&aAttached &6{balloon} &ato your weapon."
+  balloon-detached: "&eDetached &6{balloon} &efrom your weapon."
+  balloon-ignite: "&cYou have been ignited by &6{balloon}&c!"
+  inventory-full: "&cYour inventory is full. Please make space to receive the balloon."
+
+
+balloons_menu:
+  title: '&6Available Balloons'
+  size: 54
+  navigation_buttons:
+    previous_page: '&aPrevious Page'
+    next_page: '&aNext Page'
+    current_page: '&ePage {current} of {total}'
+
+extra_lore:
+  - "&7"
+  - "&7Balloon attached:"
+  - "{balloon}"
+

@@ -1,0 +1,4 @@
+# Project exclude paths
+/Balloons-main/.gradle/
+/Balloons-main/build/
+/Balloons-main/build/classes/java/main/
